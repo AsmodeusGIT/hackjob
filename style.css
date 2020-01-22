@@ -6,6 +6,240 @@
 }
 html,
 body {
-  background-color: rgb(230, 227, 240);
-  height: 100%;
+  background-color: rgb(236, 236, 236);
+}
+
+.body-wrapper {
+  overflow: hidden;
+}
+
+/* title styles - start */
+
+.title-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  margin-top: 40px;
+}
+
+.title-box p {
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  color: rgb(236, 236, 236);
+  font-size: 120px;
+  text-shadow: 3px 3px 4px #000;
+  transition: color 1s;
+  cursor: default;
+}
+
+.title-box p:hover {
+  color: rgb(14, 175, 9);
+  transition: 0.1s;
+}
+
+#char5 {
+  text-transform: uppercase;
+}
+
+/* title styles - end */
+
+.content1-wrapper {
+  display: block;
+  width: 100%;
+  height: 800px;
+  background: url('./img/img1.jpg') no-repeat fixed center;
+  background-size: cover;
+}
+
+.content1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper-1 {
+  width: 100vw;
+}
+
+.wrapper-1-1 {
+  width: 25vw;
+  float: right;
+  padding: 30px;
+  margin-top: 10vh;
+  margin-right: 20vw;
+  color: rgb(236, 236, 236);
+}
+
+.title-content1 {
+  text-shadow: 1px 1px 2px #000;
+  font-size: 40px;
+  padding-bottom: 20px;
+  font-family: 'Noto Sans SC', sans-serif;
+}
+
+.text-content1 {
+  font-size: 25px;
+  color: rgb(236, 236, 236);
+}
+
+.content2-wrapper {
+  width: 100vw;
+  min-height: 50vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+.content2 {
+  width: 65%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 320px;
+  min-width: 350px;
+  background-color: rgb(253, 253, 253);
+  height: 450px;
+  padding: 15px;
+  margin: 10px;
+  margin-top: -30px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 5px 19px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 5px 19px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 5px 19px -4px rgba(0, 0, 0, 0.75);
+  transition: 0.3s;
+  margin-bottom: 50px;
+}
+
+.card-title {
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 15px 0 10px 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.274);
+}
+
+.card-subtitle {
+  text-align: center;
+  padding: 15px 0 10px 0;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.15);
+  font-size: 40px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.card p {
+  font-family: 'Roboto', sans-serif;
+  padding: 15px;
+  text-align: justify;
+}
+
+.content3-wrapper {
+  min-height: 60vh;
+}
+
+.content3 {
+  width: 60vw;
+  margin: auto;
+  margin-top: 120px;
+}
+
+.hacker-img {
+  width: 500px;
+  position: relative;
+  left: 0px;
+}
+
+.content3-left-pusher {
+  min-width: 200px;
+  min-height: 100px;
+  float: left;
+}
+
+.line {
+  border-top: 2px solid rgba(0, 0, 0, 0.8);
+  width: inherit;
+  position: absolute;
+  margin-top: 338px;
+}
+
+.content3-text-container {
+  margin-right: 40px;
+  height: 250px;
+  float: right;
+  width: 500px;
+  padding: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  position: absolute;
+  right: 23vw;
+}
+
+.content3:hover .content3-text-container {
+  height: 260px;
+  width: 510px;
+  margin-right: 35px;
+  margin-top: -5px;
+  transition: 0.3s;
+}
+
+.content3:hover .content3-h2 {
+  transform: rotate(0deg);
+  transition: 0.3s;
+}
+
+.content3:hover .content3-text {
+  transform: rotate(0deg);
+  transition: 0.3s;
+}
+
+.top-right {
+  height: 50px;
+  width: 50px;
+  border-top: solid rgb(14, 175, 9);
+  border-right: solid rgb(14, 175, 9);
+  border-width: 5px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.bottom-left {
+  height: 50px;
+  width: 50px;
+  border-bottom: solid rgb(14, 175, 9);
+  border-left: solid rgb(14, 175, 9);
+  border-width: 5px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+.content3-h2 {
+  transform: rotate(-2deg);
+  font-size: 60px;
+  padding: 5px;
+  font-family: 'Noto Sans SC', sans-serif;
+  color: rgba(0, 0, 0, 0.75);
+  padding-bottom: 10px;
+  margin-top: -10px;
+  margin-left: 20px;
+  transition: 0.3s;
+}
+
+.content3-text {
+  transform: rotate(-2deg);
+  font-family: 'Noto Sans SC', sans-serif;
+  color: rgba(0, 0, 0, 0.75);
+  padding: 10px;
+  margin-left: 25px;
+  transition: 0.3s;
 }
