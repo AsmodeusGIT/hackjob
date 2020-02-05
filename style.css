@@ -45,6 +45,7 @@ body {
   height: 100%;
   width: 35px;
   margin: 14px 14px 0px 0px;
+  display: none;
 }
 
 .burger {
@@ -98,18 +99,20 @@ body {
   transition: 0.2s;
 }
 
-.navlink::before {
-}
-
 /* title styles - start */
 
 .title-box {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
   position: relative;
-  margin-top: 150px;
-  left: 330px;
+  margin-top: 120px;
+  margin-left: auto;
+  margin-right: 0px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .title-box p {
@@ -148,23 +151,25 @@ body {
 }
 
 .wrapper-1 {
-  width: 100vw;
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  align-content: right;
 }
 
 .wrapper-1-1 {
-  width: 25vw;
-  float: right;
-  padding: 30px;
-  margin-top: 5vh;
-  margin-right: 20.3vw;
   color: rgb(236, 236, 236);
 }
 
 .text-content1 {
-  font-size: 25px;
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: calc(15px + 0.6vw);
   color: rgb(236, 236, 236);
   text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
-  text-align: justify;
+  float: right;
+  width: 30vw;
+  margin-top: 35px;
+  text-align: right;
 }
 
 .text-content1::before {
@@ -183,10 +188,10 @@ body {
 }
 
 .content2 {
-  width: 65%;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -196,7 +201,7 @@ body {
   background-color: rgb(253, 253, 253);
   height: 450px;
   padding: 15px;
-  margin: 10px;
+  margin: 1vw;
   margin-top: -30px;
   border-radius: 15px;
   -webkit-box-shadow: 0px 5px 19px -4px rgba(0, 0, 0, 0.75);
@@ -598,12 +603,143 @@ input {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(46, 46, 46); 
+  background: rgb(46, 46, 46);
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(6, 165, 6);
+}
 
-@media only screen and (max-width:800px) {
-  
+@media only screen and (max-width: 1650px) {
+  .wrapper-1 {
+    width: 80vw;
+  }
+
+  .text-content1 {
+    width: 50vw;
+  }
+}
+
+@media only screen and (max-width: 675px) {
+  .stamp {
+    position: absolute;
+    height: 150px;
+    margin-top: 500px;
+    margin-left: 10px;
+    z-index: 1;
+  }
+
+  .burger-container {
+    display: initial;
+    margin-left: 0px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .burger-content {
+    width: 30vw;
+    background-color: rgb(24, 114, 2);
+    padding: 3px 5px 3px 5px;
+    z-index: 1;
+    position: absolute;
+    display: none;
+  }
+
+  .burger-content a {
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+    background-color: rgb(24, 114, 2);
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 6vw;
+    letter-spacing: 2px;
+    z-index: 1;
+  }
+
+  .burger-content a:hover {
+    background-color: rgb(34, 150, 5);
+    z-index: 1;
+  }
+
+  .burger-container:hover .burger-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .navbar-width-container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .content1-wrapper {
+    display: block;
+    width: 100%;
+    height: 45vh;
+    background: url('./img/img3.jpg');
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .title-box {
+    margin-left: 0px;
+    margin-top: 1vh;
+    justify-content: center;
+  }
+
+  .title-box p {
+    font-size: 25vw;
+  }
+
+  .wrapper-1 {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+  }
+  .wrapper-1-1 {
+    margin-right: auto;
+    margin-left: auto;
+    width: 80vw;
+    padding: 0px;
+    margin-top: 3vh;
+  }
+
+  .text-content1 {
+    font-size: calc(10px + 1vw);
+    text-align: left;
+    float: none;
+    width: 80vw;
+    margin-top: 10px;
+  }
+
+  .card {
+    margin: 5px;
+    margin-top: -40px;
+    margin-bottom: 70px;
+  }
+
+  .card:hover {
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .card {
+    margin-top: -45px;
+    margin-bottom: 10px;
+    transform: scale(0.85);
+  }
+
+  .card:hover {
+    transform: scale(0.9);
+  }
+
+  .content1-wrapper {
+    height: 45vh;
+  }
 }
