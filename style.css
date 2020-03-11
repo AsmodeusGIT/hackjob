@@ -247,6 +247,7 @@ body {
 }
 
 .content3 {
+  min-width: 60vw;
   width: 60vw;
   margin: auto;
   margin-top: 120px;
@@ -271,13 +272,13 @@ body {
 
 .line {
   border-top: 1px solid rgba(0, 0, 0, 0.8);
-  width: inherit;
+  width: 100%;
   position: absolute;
   margin-top: 323px;
 }
 
 .content3-text-container {
-  margin-right: 40px;
+  margin-right: 2vw;
   height: 250px;
   width: 500px;
   padding: 20px;
@@ -421,7 +422,7 @@ body {
   position: absolute;
   height: 150px;
   margin-top: 500px;
-  margin-left: 350px;
+  margin-left: 340px;
   z-index: 1;
   transition: 0.3s;
   filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.4));
@@ -610,9 +611,52 @@ input {
   background: rgb(6, 165, 6);
 }
 
+@media only screen and (max-width: 1740px) {
+  .line {
+    border-top: 1px solid rgba(0, 0, 0, 0.6);
+  }
+  .content3 {
+    justify-content: center;
+    padding-left: 2vw;
+    margin-top: 60px;
+  }
+
+  .content3-left-pusher {
+    display: none;
+  }
+  .content3-text-container {
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .content3:hover .content3-text-container {
+    margin-right: auto;
+  }
+
+  .server-img {
+    width: 28vw;
+    margin-top: 100px;
+    margin-left: 0px;
+  }
+  .form-container {
+    margin-bottom: 80px;
+  }
+}
+
+@media only screen and (max-width: 1666px) {
+  .content5 {
+    padding-top: 100px;
+  }
+
+  .talk-container {
+    min-height: 200px;
+  }
+}
+
 @media only screen and (max-width: 1650px) {
   .wrapper-1 {
-    width: 80vw;
+    width: 90vw;
   }
 
   .text-content1 {
@@ -620,11 +664,82 @@ input {
   }
 }
 
+@media only screen and (max-width: 1530px) {
+  .content4 {
+    justify-content: center;
+  }
+  .serv-img-cont {
+    display: none;
+  }
+  .server-img {
+    display: none;
+  }
+  .cert-page {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+  .content2 {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  .card {
+    border-radius: 20px;
+    margin-bottom: 100px;
+    width: 427px;
+    height: 600px;
+  }
+  .card-title {
+    font-size: 35px;
+  }
+
+  .card-icon {
+    width: 80px;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+  }
+
+  .card p {
+    font-size: 20px;
+  }
+  .content3 {
+    margin-top: 20px;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .content3 {
+    width: 80vw;
+  }
+  .content5 {
+    width: 80%;
+  }
+}
+
 @media only screen and (max-width: 675px) {
+  .line {
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+    width: 90%;
+  }
+  .content3 {
+    width: 96vw;
+  }
+  .content3-text-container {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   .stamp {
     position: absolute;
     height: 150px;
-    margin-top: 500px;
+    margin-top: 515px;
     margin-left: 10px;
     z-index: 1;
   }
@@ -639,21 +754,43 @@ input {
   }
 
   .burger-content {
-    width: 30vw;
-    background-color: rgb(24, 114, 2);
-    padding: 3px 5px 3px 5px;
+    width: 100vw;
+    height: 200px;
+    background: rgb(24, 114, 2);
+    background: -moz-linear-gradient(
+      top,
+      rgb(24, 114, 2) 0%,
+      rgb(24, 114, 2) 70%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    background: -webkit-linear-gradient(
+      top,
+      rgb(24, 114, 2) 0%,
+      rgb(24, 114, 2) 70%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    background: linear-gradient(
+      to bottom,
+      rgb(24, 114, 2) 0%,
+      rgb(24, 114, 2) 70%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    padding: 10px 10px 10px 10px;
     z-index: 1;
     position: absolute;
     display: none;
+    transform: translate(-16px, -40px);
   }
 
   .burger-content a {
     text-decoration: none;
     color: rgb(253, 253, 253);
-    background-color: rgb(24, 114, 2);
+    background-color: transparent;
     font-family: 'Noto Sans SC', sans-serif;
     font-size: 6vw;
     letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-align: center;
     z-index: 1;
   }
 
@@ -728,7 +865,116 @@ input {
   }
 }
 
+@media only screen and (max-width: 520px) {
+  .content4-wrapper {
+    height: 650px;
+  }
+  .talk-container {
+    min-height: 160px;
+  }
+
+  .talk-to-us {
+    font-size: 50px;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .content3 {
+    width: 100%;
+    padding: 0px;
+  }
+  /* crooked start */
+
+  .content3-text-container {
+    height: 200px;
+    width: 400px;
+    padding: 15px;
+  }
+
+  .content3:hover .content3-text-container {
+    height: 210px;
+    width: 410px;
+  }
+
+  .content3-h2 {
+    font-size: 50px;
+    margin-left: 10px;
+  }
+
+  .content3-text {
+    margin-left: 10px;
+    font-size: 0.7em;
+  }
+
+  /* crooked end */
+  .card {
+    width: 320px;
+    min-width: 350px;
+    height: 450px;
+    border-radius: 15px;
+    margin-bottom: 70px;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .card-icon {
+    width: 60px;
+  }
+
+  .card p {
+    font-size: initial;
+  }
+
+  .cert-page {
+    min-width: 375px;
+    width: 375px;
+    height: 500px;
+  }
+
+  .cert-title {
+    font-size: 35px;
+  }
+
+  .cert-text {
+    font-size: 15px;
+  }
+
+  .stamp {
+    margin-top: 436px;
+  }
+}
+
 @media only screen and (max-width: 415px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+    height: 100%;
+  }
+
+  .footer-txt1 {
+    padding-top: 0px;
+  }
+  .footer-txt2 {
+    padding-top: 0px;
+  }
+
+  .content5 {
+    width: 98%;
+  }
+
+  .content4-wrapper {
+    height: 550px;
+  }
+  .content3-wrapper {
+    min-height: 280px;
+  }
   .card {
     margin-top: -45px;
     margin-bottom: 10px;
@@ -741,5 +987,33 @@ input {
 
   .content1-wrapper {
     height: 45vh;
+  }
+
+  .cert-page {
+    min-width: 300px;
+    width: 300px;
+    height: 400px;
+    padding-top: 1px;
+  }
+
+  .cert-title {
+    font-size: 30px;
+  }
+
+  .cert-text {
+    font-size: 12px;
+    padding-top: -0px;
+  }
+
+  .stamp {
+    margin-top: 330px;
+    margin-left: 0px;
+    transform: scale(0.7);
+  }
+}
+
+@media only screen and (max-width: 391px) {
+  .footer-txt2 {
+    margin-top: -5px;
   }
 }
